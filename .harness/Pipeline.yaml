@@ -12,7 +12,7 @@ pipeline:
         type: Deployment
         spec:
           serviceConfig:
-            serviceRef: k8service
+            serviceRef: k8ssamp
             serviceDefinition:
               spec:
                 variables: []
