@@ -24,11 +24,11 @@ pipeline:
                         store:
                           type: Github
                           spec:
-                            connectorRef: testhelp
+                            connectorRef: dhrubagithubdelegateconnector
                             gitFetchType: Branch
                             paths:
                               - default-k8s-manifests/Manifests/Files/templates
-                            repoName: harness-docs
+                            repoName: cd-pipeline-sample
                             branch: main
                         skipResourceVersioning: false
                   - manifest:
@@ -38,11 +38,11 @@ pipeline:
                         store:
                           type: Github
                           spec:
-                            connectorRef: testhelp
+                            connectorRef: dhrubagithubdelegateconnector
                             gitFetchType: Branch
                             paths:
                               - default-k8s-manifests/Manifests/Files/ng_values_dockercfg.yaml
-                            repoName: harness-docs
+                            repoName: cd-pipeline-sample
                             branch: main
                 artifacts:
                   primary:
