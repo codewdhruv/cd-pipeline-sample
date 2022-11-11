@@ -47,13 +47,13 @@ pipeline:
                 artifacts:
                   primary:
                     spec:
-                      connectorRef: harnessdocker
+                      connectorRef: dockerdelegatedhruba
                       imagePath: <+input>
                       tag: <+input>
                     type: DockerRegistry
               type: Kubernetes
           infrastructure:
-            environmentRef: K8Env
+            environmentRef: testing
             infrastructureDefinition:
               type: KubernetesDirect
               spec:
