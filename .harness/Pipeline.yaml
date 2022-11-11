@@ -48,7 +48,7 @@ pipeline:
                   primary:
                     spec:
                       connectorRef: dockerdelegatedhruba
-                      imagePath: <+input>
+                      imagePath: library/nginx
                       tag: <+input>
                     type: DockerRegistry
               type: Kubernetes
